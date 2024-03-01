@@ -7,27 +7,39 @@
   <title>Rock Paper Scissor</title>
 </head>
 <body>
-    <div><h1>Rock Paper Scissors</h1></div>
+    
 
-    <div class="container">
+
+
+      <div class="header">
+        
+        <div class="h1">
+          <div><h1>Rock Paper Scissors</h1></div>
+         </div>
+
+        <div class="score-board">
+          <div class="user-score">
+            <p id="user-score">0</p>
+            <p>You</p>
+          </div>
+          <div class="line"></div>
+          <div class="comp-score">
+            <p id="comp-score">0</p>
+            <p>Comp</p>
+          </div>
+        </div>
+      </div> 
+
+  <div class="btns">
+
         <div class="btn" id="rock"><img src="rock.png" alt=""></div>
         <div class="btn" id="paper"><img src="paper.png" alt=""></div>
         <div class="btn" id="scissors"><img src="scissor.png" alt=""></div>
       
-    </div>
-    <div>
-      <div class="msg-cont"><h3 id="msg" >Make your move</h3></div>
-      <div class="score-board">
-        
-        <div class="user-score">
-          <p id="user-score">0</p>
-          <p>You</p>
-        </div>
-        <div class="comp-score">
-          <p id="comp-score">0</p>
-          <p>Comp</p>
-        </div>
-      </div>
+  </div>
+    <div class="footer">
+      <div class="msg-cont" id="msg">make your move</div>
+      <button class="restart" onclick="restart()">restart</button>    
     </div>
     <script src="script.js"></script>
 </body>
